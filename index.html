@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/Admin.css">
+    <link rel="stylesheet" href="./CSS/all.css">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <title>Admin</title>
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar collapsed" id="side">
+            <div class="list_icon" id="view">
+                <i class="fa-solid fa-list"></i>
+            </div>
+            <div class="nav">
+                <div class="logo">
+                    <img src="./Screenshot 2024-08-24 170508.png" alt="logo">
+                    <h1>Creative</h1>
+                </div>
+                <ul class="analytics">
+                    <li><i class="fa-solid fa-chart-simple"></i><span class="sp">DashBoard</span></li>
+                    <li><i class="fa-solid fa-image"></i> <span class="sp">Pages</span></li>
+                    <li><i class="fa-brands fa-web-awesome"></i><span class="sp">Components</span></li>
+                    <li><i class="fa-solid fa-user-tie"></i><span class="sp">Forms</span></li>
+                    <li><i class="fa-solid fa-table"></i><span class="sp">Tables</span></li>
+                    <li><i class="fa-solid fa-map-pin"></i></i><span class="sp">Maps</span></li>
+                    <li><i class="fa-solid fa-wrench"></i><span class="sp">Widgets</span></li>
+                </ul>
+            </div>
+        </aside>
+        <main class="main-content expand">
+            <header>
+                <div class="open" id="open">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+                <div class="head">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <img src="./jn.jpeg" alt="profile">
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </header>
+            <section class="Shipments">
+                <div class="sec-head">
+                    <div class="left">
+                        <p>Total Shipments</p>
+                        <h3>Performance</h3>
+                    </div>
+                    <div class="right">
+                        <p>Purchases</p>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </section>
+            <section class="numbers">
+                <div class="num">
+                    <div class="up">
+                        <i class="fa-brands fa-rocketchat" style="background-color: rgb(56, 74, 156);"></i>
+                        <div>
+                            Number
+                            <p>165GB</p>
+                        </div>
+                    </div>
+                    <div class="down">
+                        <i class="fa-regular fa-circle-up"></i> Update Now
+                    </div>
+                </div>
+                <div class="num">
+                    <div class="up">
+                        <i class="fa-regular fa-star" style="background-color: rgb(255, 204, 2);"></i>
+                        <div>
+                            Followers
+                            <p>+98k</p>
+                        </div>
+                    </div>
+                    <div class="down">
+                        <i class="fa-solid fa-wifi"></i>Last Research
+                    </div>
+                </div>
+                <div class="num">
+                    <div class="up">
+                        <i class="fa-solid fa-user-tie" style="background-color: rgb(253, 127, 255);"></i>
+                        <div class="right">
+                            Users
+                            <p>150,000</p>
+                        </div>
+                    </div>
+                    <div class="down">
+                        <i class="fa-solid fa-thumbs-up"></i>Users Feedback
+                    </div>
+                </div>
+                <div class="num">
+                    <div class="up">
+                        <i class="fa-regular fa-square-check" style="background-color: rgb(1, 164, 110);"></i>
+                        <div class="right">
+                            Errors
+                            <p>23</p>
+                        </div>
+                    </div>
+                    <div class="down">
+                        <i class="fa-solid fa-circle-info"></i> In the last hours
+                    </div>
+                </div>
+            </section>
+            <section class="sec-charts">
+                <div class="ch">
+                    <div>
+                        <i class="fa-solid fa-paper-plane" style="color: rgb(221, 221, 0);"></i>
+                        <span>Total Shipments</span>
+                    </div>
+                    <canvas id="sec-chart1"></canvas>
+                </div>
+                <div class="ch">
+                    <div>
+                        <i class="fa-solid fa-pen-to-square" style="color: rgb(221, 0, 26);"></i>
+                        <span>Daily Tasks</span>
+                    </div>
+                    <canvas id="sec-chart2"></canvas>
+                </div>
+                <div class="ch">
+                    <div>
+                        <i class="fa-solid fa-wand-magic-sparkles" style="color: rgb(144, 0, 221);"></i>
+                        <span>Completed Tasks</span>
+                    </div>
+                    <canvas id="sec-chart3"></canvas>
+                </div>
+            </section>
+            <section class="management">
+                <div class="task">
+                    <div class="title">
+                        <h2>Tasks(5) Today</h2>
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <div class="tk">
+                        <label for="tx"></label>
+                        <input type="checkbox">
+                        <div>
+                            <h4>Update the Documentation</h4>
+                            <p>Dwuamish Head, Seattle, WA 8:47 AM</p>
+                        </div>
+                        <i class="fa-solid fa-pen"></i>
+                    </div>
+                    <div class="tk">
+                        <label for="tx"></label>
+                        <input type="checkbox">
+                        <div>
+                            <h4>GDPR Compliance</h4>
+                            <p>The GDPR is a regulation that requires businesses to protect the personal data and
+                                privacy of Europe citizens for transactions that occur within EU member states.</p>
+                        </div>
+                        <i class="fa-solid fa-pen"></i>
+                    </div>
+                    <div class="tk">
+                        <label for="tx4"></label>
+                        <input type="checkbox" id="tx4">
+                        <div>
+                            <h4>Solve the issues</h4>
+                            <p>Fifty percent of all respondents said they would be more likely to shop at a company</p>
+                        </div>
+                        <i class="fa-solid fa-pen"></i>
+                    </div>
+                    <div class="tk">
+                        <label for="tx3"></label>
+                        <input type="checkbox" id="tx3">
+                        <div>
+                            <h4>Release v2.0.0</h4>
+                            <p>Ra Ave SW, Seattle, WA 98116, SUA 11:19 AM</p>
+                        </div>
+                        <i class="fa-solid fa-pen"></i>
+                    </div>
+                    <div class="tk">
+                        <label for="tx"></label>
+                        <input type="checkbox" id="tx">
+                        <div>
+                            <h4>Export the processed files</h4>
+                            <p>The report also shows that consumers will not easily forgive a company once a breach
+                                exposing their personal data occurs.</p>
+                        </div>
+                        <i class="fa-solid fa-pen"></i>
+                    </div>
+                    <div class="tk">
+                        <label for="tx2"></label>
+                        <input type="checkbox" id="tx2">
+                        <div>
+                            <h4>Arival at export process</h4>
+                            <p>Capitol Hill, Seattle, WA 12:34 AM</p>
+                        </div>
+                        <i class="fa-solid fa-pen"></i>
+                    </div>
+                </div>
+                <div class="mg-table">
+                    <h2>Management Table</h2>
+                    <table>
+                        <thead>
+                            <tr></tr>
+                            <th>NAME</th>
+                            <th>JOB POSITION</th>
+                            <th>SALARY</th>
+
+                            <th>ACTIONS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+
+                                <td>Tania Mike</td>
+                                <td>Develop</td>
+                                <td>€ 99,225</td>
+
+                                <td>
+                                    <button class="refresh">⟳</button>
+                                    <button class="delete">✖</button>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>John Doe</td>
+                                <td>CEO</td>
+                                <td>€ 99,225</td>
+
+                                <td>
+                                    <button class="refresh">⟳</button>
+                                    <button class="delete">✖</button>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>Alexa Mike</td>
+                                <td>Design</td>
+                                <td>€ 99,225</td>
+
+                                <td>
+                                    <button class="refresh">⟳</button>
+                                    <button class="delete">✖</button>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>Jana Monday</td>
+                                <td>Marketing</td>
+                                <td>€ 99,225</td>
+
+                                <td>
+                                    <button class="refresh">⟳</button>
+                                    <button class="delete">✖</button>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>Paul Dickens</td>
+                                <td>Develop</td>
+                                <td>€ 99,225</td>
+
+                                <td>
+                                    <button class="refresh">⟳</button>
+                                    <button class="delete">✖</button>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td>Manuela Rico</td>
+                                <td>Manager</td>
+                                <td>€ 99,225</td>
+
+                                <td>
+                                    <button class="refresh">⟳</button>
+                                    <button class="delete">✖</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <footer class="footer">
+                <p>&copy; 2024 Haneen. All rights reserved.</p>
+            </footer>
+        </main>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./Admin.js"></script>
+</body>
+
+</html>

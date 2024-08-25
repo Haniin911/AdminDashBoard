@@ -1,0 +1,243 @@
+/* local and global And treat with text */
+:root {
+    --space: 16px;
+    --color: #333;
+    --bgcolor: red;
+    --font-family: 'Roboto', sans-serif;
+    --base-font-size: 16px;
+    --heading-font-size: 2rem;
+    --paragraph-font-size: 1rem;
+    --text-color: #333;
+    --heading-color: #222;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--base-font-size);
+    color: var(--text-color);
+}
+
+h1 {
+    font-size: var(--heading-font-size);
+    color: var(--heading-color);
+    background-color: var(--bgcolor);
+    margin: var(--space);
+}
+
+h2 {
+    --padding: 20px;
+    --bg-color: #1c9f4e;
+}
+
+h2 {
+    padding: var(--padding);
+    background-color: var(--bg-color);
+}
+
+/* 6 ways to center div  */
+.parent {
+    width: 100%;
+    background-color: #f0f0f0;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.child {
+    width: 300px;
+    height: 100px;
+    background-color: #dbd334;
+    margin: 0 auto;
+}
+
+.parent2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin-bottom: 100px;
+}
+
+.child2 {
+    width: 300px;
+    height: 100px;
+    background-color: #39db34;
+}
+
+
+.parent3 {
+    display: grid;
+    place-items: center;
+    background-color: #f0f0f0;
+    margin-bottom: 100px;
+}
+
+.child3 {
+    width: 300px;
+    height: 100px;
+    background-color: #db8734;
+}
+
+.parent4 {
+    position: relative;
+    background-color: #f0f0f0;
+    margin-bottom: 200px;
+}
+
+.child4 {
+    width: 300px;
+    height: 100px;
+    background-color: #9034db;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.parent5 {
+    display: flex;
+    background-color: #f0f0f0;
+    margin-bottom: 100px;
+    justify-content: center;
+}
+
+.child5 {
+    width: 300px;
+    height: 100px;
+    background-color: #db3453;
+}
+
+
+.parent6 {
+    display: table;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin-bottom: 100px;
+}
+
+.child6 {
+    vertical-align: middle;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    background-color: #34dbd3;
+    margin: auto;
+}
+
+/* inheritance  */
+.par {
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.chi {
+    color: inherit;
+}
+
+.units1 {
+    width: 200px;
+    height: 100px;
+    background-color: #db8734;
+    text-align: center;
+    margin: 20px;
+    font-size: 2em;
+    /* 32px if parent is 16px */
+}
+
+.units2 {
+    width: 2in;
+    background-color: #4734db;
+    height: 1in;
+    margin: 20px;
+}
+
+.units3 {
+    width: 5cm;
+    background-color: #db7c34;
+    height: 4cm;
+    margin: 20px;
+    font-size: 1.5rem;
+    /* 24px if root is 16px */
+}
+
+.units4 {
+    width: 100mm;
+    background-color: #c5a38a;
+    height: 50mm;
+    margin: 20px;
+}
+
+.units5 {
+    width: 300pt;
+    background-color: #0c6528;
+    height: 200pt;
+    margin: 20px;
+}
+
+.units6 {
+    width: 12pc;
+    background-color: #d6ea29;
+    height: 10pc;
+    margin: 20px;
+}
+
+.units7 {
+    width: 50vw;
+    background-color: #d6ea29;
+    height: 10vh;
+    margin: 20px;
+}
+
+.box {
+    display: flex;
+    transition: transform 0.3s;
+    width: 200px;
+    height: 100px;
+    background-color: #d34b1a;
+}
+
+.box {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    -o-transition: -o-transform 0.3s;
+    transition: transform 0.3s;
+}
+
+.box:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.top {
+    margin-top: 50px;
+}
+
+.top-child {
+    margin-top: 20px;
+}
+
+img {
+    width: 300px;
+    filter: grayscale(20%) blur(2px) brightness(1.1);
+}
+
+button.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+button:hover {
+    background-color: #d6ea29;
+}
+
+input {
+    caret-color: red;
+}
+
+textarea {
+    caret-color: #22ff00;
+}
